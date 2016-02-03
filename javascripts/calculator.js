@@ -11,11 +11,11 @@
 // When the user performs one of the operations, output the result to another 
 // DOM element of your choice.
 
-/*
-  Create a function that multiplies two numbers
-  passed in as arguments. Return the product.
- */
+function multiplication(num1, num2) {
+  return num1 * num2;
+}
 
+console.log(multiplication(3,5));
 
 /*
   Create a function that adds two numbers

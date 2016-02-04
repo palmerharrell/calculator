@@ -1,8 +1,4 @@
-// Create an HTML file that has two input fields to accept the two numbers to perform 
-// operations on.
-
-// Create 4 buttons to perform each of the basic mathematical functions (add, subtract, 
-// multiply, divide).
+var resultEl = document.getElementById("result");
 
 // In your JavaScript, put an event listener on each of the buttons.
 
@@ -11,31 +7,28 @@
 // When the user performs one of the operations, output the result to another 
 // DOM element of your choice.
 
-function multiplication(num1, num2) {
+function multiply(num1, num2) {
   return num1 * num2;
 }
 
-console.log(multiplication(3,5));
-
-/*
-  Create a function that adds two numbers
-  passed in as arguments. Return the sum.
- */
+function add(num1, num2) {
+  return num1 + num2;
+}
 
 
-/*
-  Create a function that subtracts two numbers
-  passed in as arguments. Return the difference.
- */
+function subract(num1, num2) {
+  return num1 - num2;
+}
 
 
-/*
-  Create a function that divides two numbers
-  passed in as arguments. Return the quotient.
- */
+function divide(num1, num2) {
+  return num1 / num2;
+}
 
 
-
+function calculate(num1, num2, mathFunc) {
+  return mathFunc(num1, num2);
+}
 /*
   Create a function that accepts three arguments.
     1. First number
